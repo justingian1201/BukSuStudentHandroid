@@ -1,0 +1,55 @@
+<template name="findccdt">
+	<!-- <h1>Student Service and Facilities</h1> -->
+
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="buildings"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">College of Community Development and Technology</h1>
+  {{/contentFor}}
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      
+
+      <div class="list card">
+
+
+        <div class="card">
+          <div class="item item-image">
+            <a href="/map">
+            <img src="img/images/6.png" class="imgSize">
+            </a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="item item-text-wrap">
+            <center><h2>Location</h2></center>
+            <p>Content</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="item item-text-wrap">
+            <center><h2>Description</h2></center>
+            <p>Content</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="item item-image item-text-wrap">
+            <h2>Image</h2>
+            <img src="img/images/CCDT.JPG" class="imgSize">
+          </div>
+        </div>
+
+      </div>
+
+    
+         
+    {{/ionContent}}
+  {{/ionView}}
+</template>

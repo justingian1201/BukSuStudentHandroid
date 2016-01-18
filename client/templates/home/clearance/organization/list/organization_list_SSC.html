@@ -1,0 +1,90 @@
+<template name="SSClist">
+
+
+  {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Student List</h1>
+  {{/contentFor}}
+
+  
+
+	
+	{{#ionView}}
+        {{#ionContent}}
+
+
+    <ul class="list">
+
+    <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" id="search" placeholder="Search">
+  </label>
+</div>
+
+    {{#each userData}}
+
+
+  <li class="item item-toggle">
+  <a href="{{pathFor 'studClearance'}}" style="text-decoration:none">
+     <h2><b>{{username}}</b> : {{profile.lastName}}, {{profile.firstName}} {{profile.middleName}}</h2>
+      </a>
+
+  
+    {{#if _.isEqual currentUser.username 'SSC'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnSCCStatus" {{profile.SSCstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+     {{#if _.isEqual currentUser.username 'SBO'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnSBOStatus" {{profile.SBOstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+     {{#if _.isEqual currentUser.username 'COLLEGIANER'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCOLLEGIANERStatus" {{profile.COLLEGIANERstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+
+  </li>
+ 
+
+  {{/each}}
+
+</ul>
+
+
+
+
+    {{/ionContent}}
+      {{/ionView}}
+
+
+    
+
+
+</template>

@@ -1,0 +1,112 @@
+	<template name="layout">
+	  {{#ionBody}}
+
+    {{#ionSideMenuContainer side="left" dragContent=false}}
+
+      {{#ionSideMenus}}
+
+        {{#ionSideMenu}}
+          <div class="bar bar-header bar-dark">
+            <h1 class="title">Left Menu</h1>
+          </div>
+          <div class="content has-header">
+
+
+            <div class="list card">
+
+  <div class="item item-body">
+    <img class="full-image" src="img/home/Logo.png">
+    
+      
+    
+  </div>
+
+  
+     <!--  <div class="item item-icon-right" data-ion-menu-close>
+                <a href="{{pathFor 'addStudent'}}" class="btn btn-default" id="btnAvatar">Register</a>
+              </div> -->
+ 
+
+
+
+
+
+<a href="{{pathFor 'studentProfileInfo'}}" class="item item-icon-left" data-ion-menu-close>
+    <i class="icon ion-log-out"></i>
+    Profile
+  </a>
+
+  <a href="{{pathFor 'studentProfile'}}" class="item item-icon-left" data-ion-menu-close>
+    <i class="icon ion-log-out"></i>
+    Clearance
+  </a>
+
+ <a href="#" id="btnLogout" class="item item-icon-left" data-ion-menu-close>
+    <i class="icon ion-log-out"></i>
+    Logout
+  </a>
+              
+              
+             
+
+
+
+</div>
+
+
+
+          </div>
+
+
+           <!-- <ion-side-menu side="left"> -->
+        <!-- <ion-header-bar class="expanded">
+            <img src="img/find/CAS.jpg" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                Ionic Material API
+            </div>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="../demo/www/index.html">
+                    <i class="ion ion-star"></i> Demo App
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/components">
+                    Components+
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/extensions">
+                    Extensions
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/lists">
+                    Motion Lists
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/motion">
+                    Motion Elements
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/ink">
+                    Ink
+                </ion-item>
+            </ion-list>
+        </ion-content> -->
+    <!-- </ion-side-menu> -->
+
+
+          
+        {{/ionSideMenu}}
+
+      {{/ionSideMenus}}
+
+      {{#ionSideMenuContent}}
+
+
+        {{> ionNavBar class="bar-positive"}}
+
+        {{#ionNavView}}
+          {{> yield}}
+        {{/ionNavView}}
+
+      {{/ionSideMenuContent}}
+
+    {{/ionSideMenuContainer}}
+
+  {{/ionBody}}
+	</template>

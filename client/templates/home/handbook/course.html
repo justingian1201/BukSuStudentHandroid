@@ -1,0 +1,76 @@
+<template name="course">
+	<!-- <h1>Curriculum Offerings</h1> -->
+
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="handbook"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Curriculum Offerings</h1>
+  {{/contentFor}}
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+
+
+      
+
+        <!-- <h1>Curriculum Offerings</h1> -->
+
+
+        {{#ionItem path="cas" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Arts and Sciences</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="cob" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Business</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="coe" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Education</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="ccdt" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Community Development and Technology</h2>           
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="law" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Law</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="nursing" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>College of Nursing</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="grad" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/course.png">
+            <h2>Graduate School</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          
+       
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

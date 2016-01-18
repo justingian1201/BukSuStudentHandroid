@@ -1,0 +1,20 @@
+ [
+               
+                
+                {"college":"CAS", "course":[{"name":"BSIT"},
+                							{"name":"BSMATH"},
+                							{"name":"BAEL"}]},
+                {"college":"COB", "course":[{"name":"BSA"},
+                							{"name":"BSBA"},
+                							{"name":"BPA"}]},
+                {"college":"CCDT", "course":[{"name":"BSHRM"},
+                							{"name":"BSDEVCOM"},
+                							{"name":"BSElectronics"}]},
+                {"college":"CTE", "course":[{"name":"BSE Math"},
+                							{"name":"BSE English"},
+                							{"name":"BSE Filipino"}]},
+                {"college":"CON", "course":[{"name":"BSN"}
+                							]}
+
+
+ ]

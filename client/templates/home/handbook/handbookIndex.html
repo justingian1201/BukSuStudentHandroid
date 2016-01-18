@@ -1,0 +1,47 @@
+<template name="handbook">
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Handbook</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+
+    <div class="list">
+
+      
+
+      <a href="{{pathFor 'coc'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Code of Conduct</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'ssf'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/facilities.png">
+      <h2>Student Service and Facilities</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'course'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/course.png">
+      <h2>Curricular Offerings</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'about'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/about.png">
+      <h2>About the University</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+      
+    </div>
+  
+    {{/ionContent}}
+  {{/ionView}}
+</template>

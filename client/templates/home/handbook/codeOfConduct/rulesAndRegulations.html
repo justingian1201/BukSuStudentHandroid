@@ -1,0 +1,45 @@
+<template name="rules">
+	<!-- <h1>Student Service and Facilities</h1> -->
+
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="coc"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Rules and Regulations</h1>
+  {{/contentFor}}
+
+  
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      
+
+      <!-- <h1>Rules and Regulations</h1> -->
+
+      <div class="list">
+
+    
+      <a href="{{pathFor 'rrgrave'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Grave Offences</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+    
+      <a href="{{pathFor 'rrlight'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Light Offences</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      
+
+      
+      
+    </div>
+
+         
+    {{/ionContent}}
+  {{/ionView}}
+</template>

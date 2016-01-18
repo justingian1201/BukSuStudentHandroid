@@ -1,0 +1,59 @@
+<template name="index">
+
+
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">BukSu Student Handroid</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+
+  
+      <a href="{{pathFor 'search'}}" class="button button-clear icon ion-ios-search-strong placeholder-icon">
+    
+      </a>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+
+    <div class="list">
+
+      <a href="{{pathFor 'buildings'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/search.png">
+      <h2>Buildings</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+      
+      <a href="{{pathFor 'profile'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/search.png">
+      <h2>Clearance</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'handbook'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Handbook</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+      
+      <a href="{{pathFor 'map'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/map.png">
+      <h2>Map</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+      
+    </div>
+  
+    {{/ionContent}}
+  {{/ionView}}
+</template>

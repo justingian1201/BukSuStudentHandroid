@@ -1,0 +1,74 @@
+    <template name="about">
+    	
+
+    	{{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton path="handbook"}}
+      {{/contentFor}}
+
+      {{#contentFor "headerTitle"}}
+        <h1 class="title">About</h1>
+      {{/contentFor}}
+
+      {{#contentFor "headerButtonRight"}}
+
+         
+      {{/contentFor}}
+      
+
+      {{#ionView}}
+        {{#ionContent}}
+        
+          <div class="list card">
+
+            <div class="card">
+              <div class="item item-image">
+                <img src="img/home/Logo.png" class="imgSize">
+              </div>
+            </div>
+            {{#each tabs}}
+            {{#each content}}
+          
+          <div class="card">
+            <div class="item item-text-wrap">
+              <center><h2>{{this.abouttitle}}</h2></center>
+                <p>{{this.aboutcontent}}
+                </p>
+              </div>
+          </div>
+          {{/each}}
+          {{/each}}
+
+          <!-- <div class="card">
+            <div class="item item-text-wrap">
+              <center><h2>Mission</h2></center>
+              <p>To develop competitive professionals who are committed to build a sustainable 
+                 life for all through quality instruction, research, extension and production.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="item item-text-wrap">
+              <center><h2>Vision</h2></center>
+              <p>A premier institution of higher learning in 
+                  teacher education, sciences, and humanities.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="item item-text-wrap">
+              <center><h2>Goals</h2></center>
+              <p>The National, Regional, Institutional and program goals of the University are anchored from the ten (10)   
+                 point agenda of PGMA, CHED, NEDA, MTDP, and the BSC Code (BSC Charter PD 994).
+              </p>
+            </div>
+          </div> -->
+
+
+
+      </div>
+             
+        {{/ionContent}}
+      {{/ionView}}
+    </template>

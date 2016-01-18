@@ -1,0 +1,90 @@
+<template name="buildings">
+	<!-- <h1>Find</h1> -->
+
+	
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Buildings</h1>
+  {{/contentFor}}
+
+  
+
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+
+          {{#ionItem path="findcas" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/CAS.jpg">
+            <h2>College of Arts and Sciences</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="findcob" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/COB.jpg">
+            <h2>College of Business</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="findcoe" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/COE.jpg">
+            <h2>College of Education</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="findccdt" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/CCDT.jpg">
+            <h2>College of Community Development and Technology</h2>           
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="findccdt" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/grad.jpg">
+            <h2>College of Nursing</h2>           
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="findlaw" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/Law.jpg">
+            <h2>College of Law</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="findgrad" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/grad.jpg">
+            <h2>Graduate School</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="findesl" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/esl.jpg">
+            <h2>Elementary School Laboratory</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="findssl" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/ssL.jpg">
+            <h2>Secondary School Laboratory</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="findadmin" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/find/admin.jpg">
+            <h2>Administration Building</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+
+</template>

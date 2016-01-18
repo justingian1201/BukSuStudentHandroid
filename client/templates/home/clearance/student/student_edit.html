@@ -1,0 +1,309 @@
+<template name="edit">
+
+
+      <!-- {{#contentFor "headerTitle"}}
+        <h1 class="title">Student List</h1>
+      {{/contentFor}}
+
+      {{#contentFor "headerButtonRight"}}
+
+  
+      <a href="/SSCsearch" class="button button-clear icon ion-ios-search-strong placeholder-icon">
+    
+      </a>
+  {{/contentFor}} -->
+
+
+
+ {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="studentProfileInfo"}}
+    {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Edit Profile</h1>
+  {{/contentFor}}
+
+  <!-- {{#contentFor "headerButtonRight"}}
+
+  <button class="button" id="btnSave">Save</button>
+       
+  {{/contentFor}} -->
+
+  
+
+
+
+  <!-- {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-popover="_myPopover">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='more'}}
+      {{/if}}
+    </button>
+  {{/contentFor}} -->
+
+
+
+
+	
+	{{#ionView}}
+        {{#ionContent}}
+
+        <!-- <button type="button" class="btn btn-primary" id="btnLogout">Logout</button>
+        <a href="{{pathFor 'addStudent'}}" class="btn btn-default" id="btnAvatar">Register</a> -->
+        <!-- <a href="{{pathFor 'editAccount'}}" class="btn btn-default" id="btnAvatar">Edit Account</a> -->
+
+        <!-- <form class="form-inline">
+          <input type="text" class="form-control txtName" placeholder="Username" readonly="true" value="{{currentUser.username}}" />
+          <input type="text" class="form-control txtText" placeholder="Type a message"/>
+      </form> -->
+	
+
+		<!-- <div class="list">
+
+		{{#each studentList}}
+
+      <a href="#" class="item">
+     
+      <h2><b>{{studentID}}</b> : {{studentLastname}}, {{studentFirstname}} : {{course}} : {{startDate}} : {{schoolYear}} : {{semester}} : <button class="btn btn-danger btn-smalll btnStatus">{{SSCstatus}}</button>  <button class="btn btn-danger btn-smalll btnDelete" data-action="showConfirm">&times;</button>
+        
+      </h2>
+   
+      </a>
+    
+	{{/each}}
+
+        
+    </div> -->
+
+
+ 
+
+
+
+
+
+
+      <div class="list">
+
+      {{#each editData}}
+
+    
+            <label class="item item-input">
+              <span class="input-label">Student ID</span>
+              <input type="text" class="txtNumber" value="{{username}}">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input type="text" class="txtLastName" value="{{profile.lastName}}">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input type="text" class="txtFirstName" value="{{profile.firstName}}">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Middle Name</span>
+              <input type="text" class="txtMiddleName" value="{{profile.middleName}}">
+            </label>
+            <!-- <label class="item item-input item-select"> -->
+            <label class="item item-input">
+              <span class="input-label">College</span>
+              <select class="txtCollege">
+      <!-- <option selected>Select College</option> -->
+      {{#if _.isEqual profile.college 'CAS'}}
+      <option selected>CAS</option>
+      <option>COB</option>
+      <option>CTE</option>
+      <option>CCDT</option>
+      <option>CON</option>
+      {{/if}}
+      {{#if _.isEqual profile.college 'COB'}}
+      <option>CAS</option>
+      <option selected>COB</option>
+      <option>CTE</option>
+      <option>CCDT</option>
+      <option>CON</option>
+      {{/if}}
+      {{#if _.isEqual profile.college 'CTE'}}
+      <option>CAS</option>
+      <option>COB</option>
+      <option selected>CTE</option>
+      <option>CCDT</option>
+      <option>CON</option>
+      {{/if}}
+      {{#if _.isEqual profile.college 'CCDT'}}
+      <option>CAS</option>
+      <option>COB</option>
+      <option>CTE</option>
+      <option selected>CCDT</option>
+      <option>CON</option>
+      {{/if}}
+      {{#if _.isEqual profile.college 'CON'}}
+      <option>CAS</option>
+      <option>COB</option>
+      <option>CTE</option>
+      <option>CCDT</option>
+      <option selected>CON</option>
+      {{/if}}
+    </select>
+  </label>
+
+  <!-- <label class="item item-input item-select"> -->
+  <label class="item item-input">
+              <span class="input-label">Course</span>
+              <select class="txtCourse">
+
+{{#each courselists}}
+{{#each course}}
+  
+              
+      <option>{{name}}</option>
+      <!-- <option>5th Year</option> -->
+
+        
+
+{{/each}}
+{{/each}}
+    </select>
+  </label>  
+
+            <!-- <label class="item item-input item-select"> -->
+            <label class="item item-input">
+              <span class="input-label">Year</span>
+              <select class="txtYear">
+      {{#if _.isEqual profile.year '1st Year'}}
+      <option selected>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>5th Year</option>
+      {{/if}}
+      {{#if _.isEqual profile.year '2nd Year'}}
+      <option>1st Year</option>
+      <option selected>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>5th Year</option>
+      {{/if}}
+      {{#if _.isEqual profile.year '3rd Year'}}
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option selected>3rd Year</option>
+      <option>4th Year</option>
+      <option>5th Year</option>
+      {{/if}}
+      {{#if _.isEqual profile.year '4th Year'}}
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option selected>4th Year</option>
+      <option>5th Year</option>
+      {{/if}}
+      {{#if _.isEqual profile.year '5th Year'}}
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option selected>5th Year</option>
+      {{/if}}
+    </select>
+  </label>
+
+
+    <label class="item item-input">
+              <span class="input-label">Semester</span>
+               <select class="txtSemester">
+               {{#if _.isEqual profile.semester '1st'}}
+      <option selected>1st</option>
+      <option>2nd</option>
+      {{/if}}
+      {{#if _.isEqual profile.semester '2nd'}}
+      <option>1st</option>
+      <option selected>2nd</option>
+      {{/if}}
+    </select>
+            </label>
+
+    <label class="item item-input">
+              <span class="input-label">School Year</span>
+              <select class="txtSchoolYear">
+      {{#if _.isEqual profile.SY '2016-2017'}}
+      <option selected>2016-2017</option>
+      <option>2017-2018</option>
+      <option>2018-2019</option>
+      <option>2019-2020</option>
+      <option>2020-2021</option>
+      {{/if}}
+      {{#if _.isEqual profile.SY '2017-2018'}}
+      <option>2016-2017</option>
+      <option selected>2017-2018</option>
+      <option>2018-2019</option>
+      <option>2019-2020</option>
+      <option>2020-2021</option>
+      {{/if}}
+      {{#if _.isEqual profile.SY '2018-2019'}}
+      <option>2016-2017</option>
+      <option>2017-2018</option>
+      <option selected>2018-2019</option>
+      <option>2019-2020</option>
+      <option>2020-2021</option>
+      {{/if}}
+      {{#if _.isEqual profile.SY '2019-2020'}}
+      <option>2016-2017</option>
+      <option>2017-2018</option>
+      <option>2018-2019</option>
+      <option selected>2019-2020</option>
+      <option>2020-2021</option>
+      {{/if}}
+      {{#if _.isEqual profile.SY '2020-2021'}}
+      <option>2016-2017</option>
+      <option>2017-2018</option>
+      <option>2018-2019</option>
+      <option>2019-2020</option>
+      <option selected>2020-2021</option>
+      {{/if}}
+    </select>
+            </label>
+
+    {{/each}}
+
+  <div class="padding">
+            <button class="button button-block btton-positive btnSaveProfile">Save</button>
+          </div>
+
+  <h2>Change Password</h2>    
+  <label class="item item-input">
+              <span class="input-label">Current Password</span>
+              <input type="password" class="txtCurrentPassword">
+            </label>
+    <label class="item item-input">
+              <span class="input-label">New Password</span>
+              <input type="password" class="txtPassword">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Retype New Password</span>
+              <input type="password" class="txtConfirmPassword">
+            </label>
+
+
+          </div>
+
+
+          <div class="padding">
+            <button class="button button-block btton-positive btnSave">Save</button>
+          </div>
+
+      
+      
+      
+    
+
+
+    {{/ionContent}}
+      {{/ionView}}
+
+
+    
+
+
+</template>

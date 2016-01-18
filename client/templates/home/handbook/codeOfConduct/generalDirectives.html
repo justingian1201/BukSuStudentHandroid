@@ -1,0 +1,56 @@
+<template name="general">
+	<!-- <h1>Student Service and Facilities</h1> -->
+
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="coc"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">General Directives</h1>
+  {{/contentFor}}
+
+
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+
+    <div class="list">
+
+    
+      <a href="{{pathFor 'gdcampus'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Campus and Classroom</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+    
+      <a href="{{pathFor 'gdschool'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>School Uniform</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'gdid'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>University ID</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'gddress'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Dress Code</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      
+      
+    </div>
+      
+
+      <!-- <h1>General Directives</h1> -->
+      
+
+         
+    {{/ionContent}}
+  {{/ionView}}
+</template>

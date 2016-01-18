@@ -1,0 +1,37 @@
+  <template name="search">
+
+     <div class="bar bar-header bar-positive">
+     {{>ionNavBackButton path="index"}}
+
+     <label class="item-input-wrapper item-input-inset">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="search" id="search" placeholder="Search">
+        </label>
+
+     </div>
+
+    {{#ionView}}
+      {{#ionContent}}      
+
+        <div class="list">
+
+
+
+        {{#each tabs}}
+
+        <a href="{{this.path}}" class="item item-avatar item-icon-right">
+        <img src="{{this.avatar}}">
+        <h2>{{this.tabname}}</h2>
+        <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+
+
+        {{/each}}
+
+        </div>
+
+           
+      {{/ionContent}}
+    {{/ionView}}
+
+  </template>

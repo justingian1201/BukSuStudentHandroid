@@ -1,0 +1,163 @@
+<template name="studentProfileInfo">
+
+
+      <!-- {{#contentFor "headerTitle"}}
+        <h1 class="title">Student List</h1>
+      {{/contentFor}}
+
+      {{#contentFor "headerButtonRight"}}
+
+  
+      <a href="/SSCsearch" class="button button-clear icon ion-ios-search-strong placeholder-icon">
+    
+      </a>
+  {{/contentFor}} -->
+
+
+
+ {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">BUKSU STUDENT HANDROID</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+
+      <a href="{{pathFor 'edit'}}" class="button button-clear">
+        EDIT
+      </a>
+  {{/contentFor}}
+
+  
+
+
+
+  <!-- {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-popover="_myPopover">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='more'}}
+      {{/if}}
+    </button>
+  {{/contentFor}} -->
+
+
+
+
+	
+	{{#ionView}}
+        {{#ionContent}}
+
+        <!-- <button type="button" class="btn btn-primary" id="btnLogout">Logout</button>
+        <a href="{{pathFor 'addStudent'}}" class="btn btn-default" id="btnAvatar">Register</a> -->
+        <!-- <a href="{{pathFor 'editAccount'}}" class="btn btn-default" id="btnAvatar">Edit Account</a> -->
+
+        <!-- <form class="form-inline">
+          <input type="text" class="form-control txtName" placeholder="Username" readonly="true" value="{{currentUser.username}}" />
+          <input type="text" class="form-control txtText" placeholder="Type a message"/>
+      </form> -->
+	
+
+		<!-- <div class="list">
+
+		{{#each studentList}}
+
+      <a href="#" class="item">
+     
+      <h2><b>{{studentID}}</b> : {{studentLastname}}, {{studentFirstname}} : {{course}} : {{startDate}} : {{schoolYear}} : {{semester}} : <button class="btn btn-danger btn-smalll btnStatus">{{SSCstatus}}</button>  <button class="btn btn-danger btn-smalll btnDelete" data-action="showConfirm">&times;</button>
+        
+      </h2>
+   
+      </a>
+    
+	{{/each}}
+
+        
+    </div> -->
+
+
+ 
+
+
+
+
+
+
+      <div class="list card">
+
+      <h2>Student Profile</h2>
+      {{#each userData}}
+
+      <div class="item item-avatar">
+    <img src="img/home/Logo.png">
+    
+    <h2>{{username}}</h2>
+    <p>ID NUMBER</p>
+    <h2>{{profile.firstName}} {{profile.middleName}} {{profile.lastName}}</h2>  
+    <p>FULL NAME</p>
+    <div class="row">
+  <div class="col">
+    <h2>{{profile.college}}</h2>  
+    <p>COLLEGE</p>
+  </div>
+  <div class="col">
+    <h2>{{profile.course}}</h2>   
+    <p>COURSE</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h2>{{profile.semester}}</h2> 
+    <p>SEMESTER</p>
+  </div>
+  <div class="col">
+    <h2>{{profile.SY}}</h2>  
+    <p>SCHOOL YEAR</p>
+  </div>
+</div>
+      
+    </div>
+
+    <!-- <a class="item" href="#">
+    <div class="row no-padding">
+  <div class="col no-padding"><p>ID NUMBER: <b>{{username}}</b></p></div>
+</div>
+<div class="row no-padding">
+  <div class="col no-padding"><p>FULL NAME: <b>{{profile.firstName}} {{profile.middleName}} {{profile.lastName}}</b></p></div>
+</div>
+</a>
+
+<a class="item" href="#">
+<div class="row no-padding">
+  <div class="col no-padding"><p>College: <b>{{profile.college}}</b></p></div>
+  <div class="col no-padding"><p>Course & Year: <b>{{profile.course}}</b></p></div>
+</div>
+</a>
+<a class="item" href="#">
+<div class="row no-padding">
+  <div class="col no-padding"><p>Semester: <b>{{profile.semester}}</b></p></div>
+  <div class="col no-padding"><p>SCHOOL YEAR: <b>{{profile.SY}}</b></p></div>
+</div>
+</a> -->
+
+    {{/each}}
+</div>
+
+
+      
+      
+      
+    
+
+
+    {{/ionContent}}
+      {{/ionView}}
+
+
+    
+
+
+</template>

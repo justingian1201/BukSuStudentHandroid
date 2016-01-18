@@ -1,0 +1,76 @@
+            [
+               
+                
+                {"tabname":"Campus Map", "avatar":"img/home/map.png", "path":"/map", "mapcontent":"img/maps/BSU.png"},
+                {"tabname":"Find", "avatar":"img/home/search.png", "path":"/find"},
+                {"tabname":"Code of Conduct", "avatar":"img/home/codeEthics.png", "path":"/coc"},
+                {"tabname":"Student Service and Facilities", "avatar":"img/home/facilities.png", "path":"/ssf"},
+                {"tabname":"Curricular Activities", "avatar":"img/home/course.png", "path":"/course"},
+                {"tabname":"About the University", "avatar":"img/home/about.png", "path":"/about", "content": [ {"abouttitle":"Milestones", "aboutcontent":"Bukidnon State niversity is located in the capital town of Malaybalay City, Bukidnon and is strategically positioned to serve Region X, Region XI and CARAGA Region and other out laying cities and provinces of Mindanao. It is one of the leading educational institutions serving the people not only in Mindanao but also other parts of te world. The following series of milestones ecam evolutionary decades in the history of the College."},
+                                                                                                                {"abouttitle":"Mission", "aboutcontent":"To develop competitive professionals who are committed to build a sustainable life for all through quality instruction, research, extension and production."},
+                                                                                                                {"abouttitle":"Vision", "aboutcontent":"A premier institution of higher learning in teacher education, sciences, and humanities."},
+                                                                                                                {"abouttitle":"Goals", "aboutcontent": "The National, Regional, Institutional and program goals of the University are anchored from the ten (10) point agenda of PGMA, CHED, NEDA, MTDP, and the BSC Code (BSC Charter PD 994)."}]},
+                
+                
+                
+                {"tabname":"College of Arts and Sciences", "avatar":"img/find/CAS.jpg", "path":"/findcas", "mapcontent":"img/maps/cas.png"},
+                {"tabname":"College of Business", "avatar":"img/find/COB.jpg", "path":"/findcob"},
+                {"tabname":"College of Education", "avatar":"img/find/COE.jpg", "path":"/findcoe"},
+                {"tabname":"College of Community Development and Technology", "avatar":"img/find/CCDT.jpg", "path":"/findccdt"},
+                {"tabname":"College of Law", "avatar":"img/find/Law.jpg", "path":"/findLaw"},
+                {"tabname":"Graduate School", "avatar":"img/find/grad.jpg", "path":"/findgrad"},
+                {"tabname":"Elementary School Laboratory", "avatar":"img/find/esl.jpg", "path":"/findesl"},
+                {"tabname":"Secondary School Laboratory", "avatar":"img/find/ssL.jpg", "path":"/findssl"},
+                {"tabname":"Administration Building", "avatar":"img/find/admin.jpg", "path":"/findadmin"},
+
+                {"tabname":"General Directives", "avatar":"img/home/codeEthics.png", "path":"/general"},
+                {"tabname":"Specific Rules of Behaviour", "avatar":"img/home/codeEthics.png", "path":"/specific"},
+                {"tabname":"Duties & Responsibilities of Students", "avatar":"img/home/codeEthics.png", "path":"/duties"},
+                {"tabname":"Rights of Students", "avatar":"img/home/codeEthics.png", "path":"/rights"},
+                {"tabname":"Social Norms", "avatar":"img/home/codeEthics.png", "path":"/social"},
+                {"tabname":"University Disciplinary Measures", "avatar":"img/home/codeEthics.png", "path":"/university"},
+                {"tabname":"Rules and Regulations", "avatar":"img/home/codeEthics.png", "path":"/rules"},
+
+                {"tabname":"Campus and Classroom", "avatar":"img/home/codeEthics.png", "path":"/gdcampus"},
+                {"tabname":"School Uniform", "avatar":"img/home/codeEthics.png", "path":"/gdschool"},
+                {"tabname":"University ID", "avatar":"img/home/codeEthics.png", "path":"/gdid"},
+                {"tabname":"Dress Code", "avatar":"img/home/codeEthics.png", "path":"/gddress"},
+
+                {"tabname":"Warning", "avatar":"img/home/codeEthics.png", "path":"/dmwarning"},
+                {"tabname":"Disciplinary Probation", "avatar":"img/home/codeEthics.png", "path":"/dmprobation"},
+                {"tabname":"Suspension and Expulsion", "avatar":"img/home/codeEthics.png", "path":"/dmsuspension"},
+
+                {"tabname":"Grave Offences", "avatar":"img/home/codeEthics.png", "path":"/rrgrave"},
+                {"tabname":"Light Offences", "avatar":"img/home/codeEthics.png", "path":"/rrlight"},
+                
+                {"tabname":"Admission and Testing", "avatar":"img/home/facilities.png", "path":"/ssfadmission"},
+                {"tabname":"Audio Visual Room", "avatar":"img/home/facilities.png", "path":"/ssfavc"},
+                {"tabname":"Data Center", "avatar":"img/home/facilities.png", "path":"/ssfdata"},
+                {"tabname":"Ethno-Cultural Museum", "avatar":"img/home/facilities.png", "path":"/ssfethno"},
+                {"tabname":"Extension Services", "avatar":"img/home/facilities.png", "path":"/ssfextension"},
+                {"tabname":"Gate Pass", "avatar":"img/home/facilities.png", "path":"/ssfgate"},
+                {"tabname":"Guidance and Counseling Office", "avatar":"img/home/facilities.png", "path":"/ssfguidance"},
+                {"tabname":"Health Services", "avatar":"img/home/facilities.png", "path":"/ssfhealth"},
+                {"tabname":"Library", "avatar":"img/home/facilities.png", "path":"/ssflibrary"},
+                {"tabname":"Office of the Student Services", "avatar":"img/home/facilities.png", "path":"/ssfoss"},
+                {"tabname":"Radio Station", "avatar":"img/home/facilities.png", "path":"/ssfradio"},
+                {"tabname":"Recreational Facilities", "avatar":"img/home/facilities.png", "path":"/ssfrecreational"},
+                {"tabname":"Research Center", "avatar":"img/home/facilities.png", "path":"/ssfresearch"},
+                {"tabname":"Halls and Dormitories", "avatar":"img/home/facilities.png", "path":"/ssfresidence"},
+                {"tabname":"Speech Laboratory", "avatar":"img/home/facilities.png", "path":"/ssfspeech"},
+                {"tabname":"University Vehicles", "avatar":"img/home/facilities.png", "path":"/ssfuniversity"},
+                {"tabname":"Wifi Services", "avatar":"img/home/facilities.png", "path":"/ssfwifi"},
+
+                {"tabname":"College of Arts and Sciences", "avatar":"img/home/course.png", "path":"/cas"},
+                {"tabname":"College of Business", "avatar":"img/home/course.png", "path":"/cob"},
+                {"tabname":"College of Education", "avatar":"img/home/course.png", "path":"/coe"},
+                {"tabname":"College of Community Development and Technology", "avatar":"img/home/course.png", "path":"/ccdt"},
+                {"tabname":"College of Law", "avatar":"img/home/course.png", "path":"/law"},
+                {"tabname":"College of Nursing", "avatar":"img/home/course.png", "path":"/nursing"},
+                {"tabname":"Graduate School", "avatar":"img/home/course.png", "path":"/grad"}
+                
+            
+
+            ]
+
+

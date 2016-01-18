@@ -1,0 +1,46 @@
+<template name="university">
+	<!-- <h1>Student Service and Facilities</h1> -->
+
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="coc"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Disciplinary Measures</h1>
+  {{/contentFor}}
+
+  
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      
+
+      <!-- <h1>Disciplinary Measures</h1> -->
+      <div class="list">
+
+    
+      <a href="{{pathFor 'dmwarning'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Warning</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+    
+      <a href="{{pathFor 'dmprobation'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Disciplinary Probation</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      <a href="{{pathFor 'dmsuspension'}}" class="item item-avatar item-icon-right">
+      <img src="img/home/codeEthics.png">
+      <h2>Suspension and Expulsion</h2>
+      <i class="icon ion-ios-arrow-forward"></i>
+      </a>
+
+      
+    </div>
+         
+    {{/ionContent}}
+  {{/ionView}}
+</template>

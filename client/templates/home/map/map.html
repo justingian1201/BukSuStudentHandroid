@@ -1,0 +1,41 @@
+<template name="map">
+	<!-- <h1>Campus Map</h1> -->
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Campus Map</h1>
+  {{/contentFor}}
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      
+
+        <!-- <h1>Campus Map</h1>
+
+
+ -->
+
+
+
+{{#each tabs}}
+
+    <div class="card">
+      <div class="item item-image">
+          <img src="{{this.mapcontent}}" class="mapSize">
+      </div>
+    </div>
+      
+{{/each}}
+
+
+
+
+         
+
+     
+    {{/ionContent}}
+  {{/ionView}}
+</template>

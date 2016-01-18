@@ -1,0 +1,88 @@
+<template name="studClearance">
+
+  {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="users"}}
+  {{/contentFor}}
+ 
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Clearance</h1>
+  {{/contentFor}}
+
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+
+
+    <!-- <div class="row">
+  <div class="col">Name:</div>
+</div>
+
+<div class="row">
+  <div class="col">Course&Year:</div>
+  <div class="col">Student No.:</div>
+</div> -->
+
+
+    <!-- <button class="btn btn-danger btn-smalll btnClearance">SHOW</button> -->
+
+  <!--   <div class="list">
+
+      <a href="#" class="item">  
+      <h2>SBO : {{profile.SBOstatus}}</h2>
+      </a>
+      
+      <a href="#" class="item">
+      <h2>SSC : {{profile.SSCstatus}}</h2>
+      </a>
+
+      <a href="#" class="item">
+      <h2>Collegianer : {{profile.COLLEGIANERstatus}}</h2>
+      </a>
+      
+      
+    </div> -->
+
+    <div class="list">
+
+    <a class="item" href="#">
+    <div class="row no-padding">
+  <div class="col no-padding"><p>Name: <b>{{profile.lastName}}, {{profile.firstName}} {{profile.middleName}}</b></p></div>
+</div>
+</a>
+
+<a class="item" href="#">
+<div class="row no-padding">
+  <div class="col no-padding"><p>Course&Year: <b>{{profile.course}} </b>{{#if _.isEqual profile.year '1st Year'}}<b>1</b>{{/if}}{{#if _.isEqual profile.year '2nd Year'}}<b>2</b>{{/if}}{{#if _.isEqual profile.year '3rd Year'}}<b>3</b>{{/if}}{{#if _.isEqual profile.year '4th Year'}}<b>4</b>{{/if}}{{#if _.isEqual profile.year '5th Year'}}<b>5</b>{{/if}}</p></div>
+  <div class="col no-padding"><p>Student No.: <b>{{username}}</b></p></div>
+</div>
+</a>
+
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>Collegianer</h2>
+      <p>{{profile.COLLEGIANERstatus}}{{#if _.isEqual profile.COLLEGIANERstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.COLLEGIANERstatus 'checked'}}<p>{{profile.COLLEGIANERofficer}}</p>{{/if}}
+    </div>
+      
+    </a>
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SSC</h2>
+      <p>{{profile.SSCstatus}}{{#if _.isEqual profile.SSCstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.SSCstatus 'checked'}}<p>{{profile.SSCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SBO</h2>
+      <p>{{profile.SBOstatus}}{{#if _.isEqual profile.SBOstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.SBOstatus 'checked'}}<p>{{profile.SBOofficer}}</p>{{/if}}
+      </div>
+    </a>
+</div>
+  
+    {{/ionContent}}
+  {{/ionView}}
+</template>

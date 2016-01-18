@@ -1,0 +1,162 @@
+<template name="register">
+
+    <!-- {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="clearOrg"}}
+    {{/contentFor}} -->
+
+  
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Add Student</h1>
+      {{/contentFor}}
+
+
+
+
+  
+  {{#ionView}}
+        {{#ionContent}}
+
+    <!-- <form class="form-signup">
+      <h2 class="form-signin-heading">Please Register?</h2>
+      <label for="inputEmail" class="sr-only">Username</label>
+      <input type="text" id="inputnewUser" class="form-control" placeholder="Username" required autofocus>
+      <br/>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputnewEmail" class="form-control" placeholder="Email address" required>
+      <br/>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputnewPassword" class="form-control" placeholder="Password" required>
+      <br/>
+      <button class="btn btn-lg btn-primary btn-block btnLogin" type="submit">Register</button>
+    </form> -->
+
+    <!-- <form class="form-inline">
+          <input type="text" class="form-control txtName" placeholder="Username" readonly="true" value="{{currentUser.username}}" />
+          
+          <input type="text" class="form-control txtId" placeholder="Student ID"/>
+          <input type="text" class="form-control txtPassword" placeholder="Password"/>
+          <input type="text" class="form-control txtLastname" placeholder="Last Name"/>
+          <input type="text" class="form-control txtFirstname" placeholder="First Name"/>
+          
+          <input type="text" class="form-control txtCourse" placeholder="Course"/>
+          <input type="hidden" class="form-control txtDate" placeholder="Start Date"/>
+          <input type="text" class="form-control txtSY" placeholder="School Year"/>
+          <input type="text" class="form-control txtSem" placeholder="Semester"/>
+          
+    </form> -->
+
+
+    
+
+    <div class="list">
+
+    
+            <label class="item item-input">
+              <span class="input-label">Student ID</span>
+              <input type="text" class="txtNumber">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input type="text" class="txtLastName">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input type="text" class="txtFirstName">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Middle Name</span>
+              <input type="text" class="txtMiddleName">
+            </label>
+            <!-- <label class="item item-input item-select"> -->
+            <label class="item item-input">
+              <span class="input-label">College</span>
+              <select class="txtCollege">
+      <!-- <option selected>Select College</option> -->
+      <option selected="">Select Option:</option>
+      <option>CAS</option>
+      <option>COB</option>
+      <option>CTE</option>
+      <option>CCDT</option>
+      <option>CON</option>
+    </select>
+  </label>
+
+  <!-- <label class="item item-input item-select"> -->
+  <label class="item item-input">
+              <span class="input-label">Course</span>
+              <select class="txtCourse">
+
+{{#each courselists}}
+{{#each course}}
+  
+              
+      <option>{{name}}</option>
+      <!-- <option>5th Year</option> -->
+
+        
+
+{{/each}}
+{{/each}}
+    </select>
+  </label>  
+
+            <!-- <label class="item item-input item-select"> -->
+            <label class="item item-input">
+              <span class="input-label">Year</span>
+              <select class="txtYear">
+      <option selected>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>5th Year</option>
+    </select>
+  </label>
+
+
+    <label class="item item-input">
+              <span class="input-label">Semester</span>
+               <select class="txtSemester">
+      <option selected>1st</option>
+      <option>2nd</option>
+    </select>
+            </label>
+
+    <label class="item item-input">
+              <span class="input-label">School Year</span>
+              <select class="txtSchoolYear">
+      <option selected>2016-2017</option>
+      <option>2017-2018</option>
+      <option>2018-2019</option>
+      <option>2019-2020</option>
+      <option>2020-2021</option>
+    </select>
+            </label>
+
+          
+    <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" class="txtPassword">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Confirm Password</span>
+              <input type="password" class="txtConfirmPassword">
+            </label>
+
+
+          </div>
+          <div class="padding">
+            <button class="button button-block btton-positive btnSignin">Sign Up</button>
+            <p class="text-center">
+              If you have already an account
+              <a href="{{pathFor 'clearOrg'}}">sign in</a>
+            </p>
+          </div>
+
+         
+ 
+
+    {{/ionContent}}
+      {{/ionView}}
+
+  
+</template>

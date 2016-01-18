@@ -1,0 +1,137 @@
+<template name="studentProfile">
+
+
+      <!-- {{#contentFor "headerTitle"}}
+        <h1 class="title">Student List</h1>
+      {{/contentFor}}
+
+      {{#contentFor "headerButtonRight"}}
+
+  
+      <a href="/SSCsearch" class="button button-clear icon ion-ios-search-strong placeholder-icon">
+    
+      </a>
+  {{/contentFor}} -->
+
+
+
+ {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Student Clearance</h1>
+  {{/contentFor}}
+
+  
+
+
+
+  <!-- {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-popover="_myPopover">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='more'}}
+      {{/if}}
+    </button>
+  {{/contentFor}} -->
+
+
+
+
+	
+	{{#ionView}}
+        {{#ionContent}}
+
+        <!-- <button type="button" class="btn btn-primary" id="btnLogout">Logout</button>
+        <a href="{{pathFor 'addStudent'}}" class="btn btn-default" id="btnAvatar">Register</a> -->
+        <!-- <a href="{{pathFor 'editAccount'}}" class="btn btn-default" id="btnAvatar">Edit Account</a> -->
+
+        <!-- <form class="form-inline">
+          <input type="text" class="form-control txtName" placeholder="Username" readonly="true" value="{{currentUser.username}}" />
+          <input type="text" class="form-control txtText" placeholder="Type a message"/>
+      </form> -->
+	
+
+		<!-- <div class="list">
+
+		{{#each studentList}}
+
+      <a href="#" class="item">
+     
+      <h2><b>{{studentID}}</b> : {{studentLastname}}, {{studentFirstname}} : {{course}} : {{startDate}} : {{schoolYear}} : {{semester}} : <button class="btn btn-danger btn-smalll btnStatus">{{SSCstatus}}</button>  <button class="btn btn-danger btn-smalll btnDelete" data-action="showConfirm">&times;</button>
+        
+      </h2>
+   
+      </a>
+    
+	{{/each}}
+
+        
+    </div> -->
+
+
+ 
+
+
+
+
+
+
+      <div class="list">
+      {{#each userData}}
+
+    <a class="item" href="#">
+    <div class="row no-padding">
+  <div class="col no-padding"><p>Name: <b>{{profile.lastName}}</b>, {{profile.firstName}} {{profile.middleName}}</p></div>
+</div>
+</a>
+
+<a class="item" href="#">
+<div class="row no-padding">
+  <div class="col no-padding"><p>Course&Year: <b>{{profile.course}} </b>{{#if _.isEqual profile.year '1st Year'}}<b>1</b>{{/if}}{{#if _.isEqual profile.year '2nd Year'}}<b>2</b>{{/if}}{{#if _.isEqual profile.year '3rd Year'}}<b>3</b>{{/if}}{{#if _.isEqual profile.year '4th Year'}}<b>4</b>{{/if}}{{#if _.isEqual profile.year '5th Year'}}<b>5</b>{{/if}}</p></div>
+  <div class="col no-padding"><p>Student No.: <b>{{username}}</b></p></div>
+</div>
+</a>
+
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>Collegianer</h2>
+      <p>{{profile.COLLEGIANERstatus}}{{#if _.isEqual profile.COLLEGIANERstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.COLLEGIANERstatus 'checked'}}<p>{{profile.COLLEGIANERofficer}}</p>{{/if}}
+    </div>
+      
+      
+    </a>
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SSC</h2>
+      <p>{{profile.SSCstatus}}{{#if _.isEqual profile.SSCstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.SSCstatus 'checked'}}<p>{{profile.SSCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SBO</h2>
+      <p>{{profile.SBOstatus}}{{#if _.isEqual profile.SBOstatus 'checked'}} - {{createdAt}}{{/if}}</p>
+      {{#if _.isEqual profile.SBOstatus 'checked'}}<p>{{profile.SBOofficer}}</p>{{/if}}
+      </div>
+    </a>
+
+    {{/each}}
+</div>
+
+      
+      
+      
+    
+
+
+    {{/ionContent}}
+      {{/ionView}}
+
+
+    
+
+
+</template>

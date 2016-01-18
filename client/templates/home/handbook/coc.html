@@ -1,0 +1,79 @@
+<template name="coc">
+	<!-- <h1>Code of Ethics</h1> -->
+
+	
+	{{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="handbook"}}
+  {{/contentFor}}
+  
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Code of Conduct</h1>
+  {{/contentFor}}
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+
+
+      
+
+        <!-- <h1>Code of Ethics</h1> -->
+
+
+        {{#ionItem path="general" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>General Directives</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="specific" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>Specific Rules of Behavior</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="duties" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>Duties & Responsibilities of Students</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="rights" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>Rights of Students</h2>           
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="social" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>Social Norms</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+          {{#ionItem path="university" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>University Disciplinary Measures</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+          {{#ionItem path="rules" iconLeft=true iconRight=true avatar=true}}
+            <img src="img/home/codeEthics.png">
+            <h2>Rules and Regulations</h2>
+            {{> ionIcon icon="ios-arrow-right"}}
+          {{/ionItem}}
+
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+
+
+	 
+</template>
