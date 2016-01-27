@@ -45,10 +45,11 @@
     </div> -->
 
     <div class="list">
-
+      <!-- {{#each userData}} -->
+<!-- <h2>Hello World</h2> -->
     <a class="item" href="#">
     <div class="row no-padding">
-  <div class="col no-padding"><p>Name: <b>{{profile.lastName}}, {{profile.firstName}} {{profile.middleName}}</b></p></div>
+  <div class="col no-padding"><p>Name: <b>{{profile.lastName}}</b>, {{profile.firstName}} {{profile.middleName}}</p></div>
 </div>
 </a>
 
@@ -59,28 +60,565 @@
 </div>
 </a>
 
+
+  
+{{#if _.isEqual profile.college 'CAS'}}
+<div class="row">
+  <div class="col">
     <a class="item" href="#">
     <div class="logo-text-body wrap-text">
-      <h2>Collegianer</h2>
-      <p>{{profile.COLLEGIANERstatus}}{{#if _.isEqual profile.COLLEGIANERstatus 'checked'}} - {{createdAt}}{{/if}}</p>
-      {{#if _.isEqual profile.COLLEGIANERstatus 'checked'}}<p>{{profile.COLLEGIANERofficer}}</p>{{/if}}
+      <h2>Brain Teasers Club</h2>
+      <p>{{profile.BTCstatus}}</p>
+      {{#if _.isEqual profile.BTCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.BTCofficer}}</p>{{/if}}
     </div>
-      
     </a>
+    </div>
+    <div class="col">
     <a class="item" href="#">
     <div class="logo-text-body">
-      <h2>SSC</h2>
-      <p>{{profile.SSCstatus}}{{#if _.isEqual profile.SSCstatus 'checked'}} - {{createdAt}}{{/if}}</p>
-      {{#if _.isEqual profile.SSCstatus 'checked'}}<p>{{profile.SSCofficer}}</p>{{/if}}
+      <h2>Computer Society</h2>
+      <p>{{profile.ComSocstatus}}</p>
+      {{#if _.isEqual profile.ComSocstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.ComSocofficer}}</p>{{/if}}
       </div>
     </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
     <a class="item" href="#">
     <div class="logo-text-body">
-      <h2>SBO</h2>
-      <p>{{profile.SBOstatus}}{{#if _.isEqual profile.SBOstatus 'checked'}} - {{createdAt}}{{/if}}</p>
-      {{#if _.isEqual profile.SBOstatus 'checked'}}<p>{{profile.SBOofficer}}</p>{{/if}}
+      <h2>English Language SC</h2>
+      <p>{{profile.EngLangstatus}}</p>
+      {{#if _.isEqual profile.EngLangstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.EngLangofficer}}</p>{{/if}}
       </div>
     </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Natural Science Society</h2>
+      <p>{{profile.NatScistatus}}</p>
+      {{#if _.isEqual profile.NatScistatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.NatSciofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SSD-Council of Student Organization</h2>
+      <p>{{profile.SSDstatus}}</p>
+      {{#if _.isEqual profile.SSDstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SSDofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CAS-SBO Treasurer</h2>
+      <p>{{profile.CASSBOTREASstatus}}</p>
+      {{#if _.isEqual profile.CASSBOTREASstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CASSBOTREASofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CAS-SBO Governor</h2>
+      <p>{{profile.CASSBOGOVstatus}}</p>
+      {{#if _.isEqual profile.CASSBOGOVstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CASSBOGOVofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CAS Guidance Council</h2>
+      <p>{{profile.CASGUIDANCEstatus}}</p>
+      {{#if _.isEqual profile.CASGUIDANCEstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CASGUIDANCEofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CAS-SBO Adviser</h2>
+      <p>{{profile.CASSBOADVISERstatus}}</p>
+      {{#if _.isEqual profile.CASSBOADVISERstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CASSBOADVISERofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Department Chairperson</h2>
+      <p>{{profile.CHAIRPERSONstatus}}</p>
+      {{#if _.isEqual profile.CHAIRPERSONstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CHAIRPERSONofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CAS Dean</h2>
+      <p>{{profile.CASDEANstatus}}</p>
+      {{#if _.isEqual profile.CASDEANstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CASDEANofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+
+    {{/if}}
+
+
+
+
+
+
+    {{#if _.isEqual profile.college 'COB'}}
+<div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>SJH(HRM only)</h2>
+      <p>{{profile.SJHstatus}}</p>
+      {{#if _.isEqual profile.SJHstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SJHofficer}}</p>{{/if}}
+    </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Brain Teasers Club</h2>
+      <p>{{profile.BTCstatus}}</p>
+      {{#if _.isEqual profile.BTCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.BTCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>JPCCI(BSA&BSA only)</h2>
+      <p>{{profile.JPCCIstatus}}</p>
+      {{#if _.isEqual profile.JPCCIstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.JPCCIofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Computer Society</h2>
+      <p>{{profile.COMSOCstatus}}</p>
+      {{#if _.isEqual profile.COMSOCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.COMSOCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>JPIA(w/ Accounting Subjects only)</h2>
+      <p>{{profile.JPIAstatus}}</p>
+      {{#if _.isEqual profile.JPIAstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.JPIAofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>English Language SC</h2>
+      <p>{{profile.ELSCstatus}}</p>
+      {{#if _.isEqual profile.ELSCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.ELSCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>PAS(Pulic Ad. only)</h2>
+      <p>{{profile.PASstatus}}</p>
+      {{#if _.isEqual profile.PASstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.PASofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Natural Science Society</h2>
+      <p>{{profile.NSSstatus}}</p>
+      {{#if _.isEqual profile.NSSstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.NSSofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>JFMC(Business Ad. only)</h2>
+      <p>{{profile.JFMCstatus}}</p>
+      {{#if _.isEqual profile.JFMCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.JFMCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Guidance Councilor</h2>
+      <p>{{profile.GUIDANCEstatus}}</p>
+      {{#if _.isEqual profile.GUIDANCEstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.GUIDANCEofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CBAHPG SBO Adviser</h2>
+      <p>{{profile.CBAHPGSBOADVISERstatus}}</p>
+      {{#if _.isEqual profile.CBAHPGSBOADVISERstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CBAHPGSBOADVISERofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CBAHPG SBO</h2>
+      <p>{{profile.CBAHPGSBOstatus}}</p>
+      {{#if _.isEqual profile.CBAHPGSBOstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CBAHPGSBOofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    {{/if}}
+
+
+
+    {{#if _.isEqual profile.college 'CCDT'}}
+
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>Society President</h2>
+      <p>{{profile.SOCPRESstatus}}</p>
+      {{#if _.isEqual profile.SOCPRESstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SOCPRESofficer}}</p>{{/if}}
+    </div>
+    </a>
+   
+
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CCEIT-SBO Treasurer</h2>
+      <p>{{profile.CCEITSBOTREASstatus}}</p>
+      {{#if _.isEqual profile.CCEITSBOTREASstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CCEITSBOTREASofficer}}</p>{{/if}}
+      </div>
+    </a>
+    
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CCEIT-SBO Governor</h2>
+      <p>{{profile.CCEITSBOGOVstatus}}</p>
+      {{#if _.isEqual profile.CCEITSBOGOVstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CCEITSBOGOVofficer}}</p>{{/if}}
+      </div>
+    </a>
+  
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Chairperson</h2>
+      <p>{{profile.CHAIRPERSONstatus}}</p>
+      {{#if _.isEqual profile.CHAIRPERSONstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CHAIRPERSONofficer}}</p>{{/if}}
+      </div>
+    </a>
+
+   <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Dean</h2>
+      <p>{{profile.DEANstatus}}</p>
+      {{#if _.isEqual profile.DEANstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.DEANofficer}}</p>{{/if}}
+      </div>
+    </a>
+    
+
+    {{/if}}
+
+
+
+
+    {{#if _.isEqual profile.college 'CTE'}}
+<div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>Brain Teasers Club</h2>
+      <p>{{profile.BTCstatus}}</p>
+      {{#if _.isEqual profile.BTCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.BTCofficer}}</p>{{/if}}
+    </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Computer Society</h2>
+      <p>{{profile.COMSOCstatus}}</p>
+      {{#if _.isEqual profile.COMSOCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.COMSOCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>English Language SC</h2>
+      <p>{{profile.ELSCstatus}}</p>
+      {{#if _.isEqual profile.ELSCstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.ELSCofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Natural Science Society</h2>
+      <p>{{profile.NSSstatus}}</p>
+      {{#if _.isEqual profile.NSSstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.NSSofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>P.E Circle</h2>
+      <p>{{profile.PECIRCLEstatus}}</p>
+      {{#if _.isEqual profile.PECIRCLEstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.PECIRCLEofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Mentors League.com Treasurer</h2>
+      <p>{{profile.MLTREASstatus}}</p>
+      {{#if _.isEqual profile.MLTREASstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.MLTREASofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CTE SBO</h2>
+      <p>{{profile.CTESBOstatus}}</p>
+      {{#if _.isEqual profile.CTESBOstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CTESBOofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Mentors League.com Adviser</h2>
+      <p>{{profile.MLADVISERstatus}}</p>
+      {{#if _.isEqual profile.MLADVISERstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.MLADVISERofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>CTE-SBO Adviser</h2>
+      <p>{{profile.CTESBOADVISERstatus}}</p>
+      {{#if _.isEqual profile.CTESBOADVISERstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CTESBOADVISERofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    
+  <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Supervisor of Student Teaching</h2>
+      <p>{{profile.SSTGTstatus}}</p>
+      {{#if _.isEqual profile.SSTGTstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SSTGTofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SSL Principal</h2>
+      <p>{{profile.SSLPRINCIPALstatus}}</p>
+      {{#if _.isEqual profile.SSLPRINCIPALstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SSLPRINCIPALofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>ESL Principal</h2>
+      <p>{{profile.ESLPRINCIPALstatus}}</p>
+      {{#if _.isEqual profile.ESLPRINCIPALstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.ESLPRINCIPALofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Chairperson</h2>
+      <p>{{profile.CHAIRPERSONstatus}}</p>
+      {{#if _.isEqual profile.CHAIRPERSONstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.CHAIRPERSONofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    <div class="col">
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Dean</h2>
+      <p>{{profile.DEANstatus}}</p>
+      {{#if _.isEqual profile.DEANstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.DEANofficer}}</p>{{/if}}
+      </div>
+    </a>
+    </div>
+    </div>
+
+    {{/if}}
+
+    {{#if _.isEqual profile.college 'CON'}}
+
+    <a class="item" href="#">
+    <div class="logo-text-body wrap-text">
+      <h2>SBO Treasurer</h2>
+      <p>{{profile.SBOTREASstatus}}</p>
+      {{#if _.isEqual profile.SBOTREASstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SBOTREASofficer}}</p>{{/if}}
+    </div>
+    </a>
+   
+
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SBO Governor</h2>
+      <p>{{profile.SBOGOVstatus}}</p>
+      {{#if _.isEqual profile.SBOGOVstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SBOGOVofficer}}</p>{{/if}}
+      </div>
+    </a>
+    
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>SBO Adviser</h2>
+      <p>{{profile.SBOADVISERstatus}}</p>
+      {{#if _.isEqual profile.SBOADVISERstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.SBOADVISERofficer}}</p>{{/if}}
+      </div>
+    </a>
+  
+    <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Year Level Cordinator</h2>
+      <p>{{profile.YLCORDINATORstatus}}</p>
+      {{#if _.isEqual profile.YLCORDINATORstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.YLCORDINATORofficer}}</p>{{/if}}
+      </div>
+    </a>
+
+   <a class="item" href="#">
+    <div class="logo-text-body">
+      <h2>Dean</h2>
+      <p>{{profile.DEANstatus}}</p>
+      {{#if _.isEqual profile.DEANstatus 'checked'}}<p>{{createdAt}}</p>
+      <p>{{profile.DEANofficer}}</p>{{/if}}
+      </div>
+    </a>
+    
+
+    {{/if}}
+
+
+    
+
+    <!-- {{/each}} -->
 </div>
   
     {{/ionContent}}

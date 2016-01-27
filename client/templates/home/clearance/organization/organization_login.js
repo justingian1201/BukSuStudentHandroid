@@ -28,20 +28,21 @@ Template.clearOrg.events({
     inputPlaceholder: 'Name',
     onOk: function(event,response) {
         // return response;
+        console.log(response);
 
-        console.log(response);
-        /*if(response){
-          var userId = Meteor.userId();
+        
+        if(response){
+          // var userId = Meteor.userId();
         var officer = response;
-        response =  {officer,userId} 
-        console.log(response);
+        response =  {officer} 
+        // console.log(response);
 
 
         Meteor.call("officer", response);
         return false;
       }else{
         Meteor.logout();
-      }*/
+      }
         
     },
       onCancel: function() {

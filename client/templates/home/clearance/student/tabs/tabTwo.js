@@ -1,8 +1,8 @@
 Meteor.subscribe('userData');
 
-Template.studentProfile.helpers({
+Template.tabsTwo.helpers({
     userData: function () {
         // body...
-    return Meteor.users.findOne(Meteor.userId())
+    return Meteor.users.find(Meteor.userId())
     }
 });

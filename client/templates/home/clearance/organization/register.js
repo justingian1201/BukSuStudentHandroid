@@ -73,6 +73,8 @@ Template.register.events({
         roles: "user"
 
       }, function(err) {
+
+        console.log("ERROR", err);
                 if (err) {                   
                    IonPopup.alert({
       title: 'Alert!',
@@ -85,16 +87,7 @@ Template.register.events({
       title: 'Success',
       template: 'You have just Registered',
       onOk: function() {
-        Router.go("clearOrg");
-      }
-    });
-              
-
-            }
-            }
-            );
-
-      $(".txtNumber").val("");
+        $(".txtNumber").val("");
       $(".txtLastName").val("");
       $(".txtFirstName").val("");
       $(".txtMiddleName").val("");
@@ -105,6 +98,19 @@ Template.register.events({
       $(".txtSchoolYear").val("");
       $(".txtPassword").val("");
       $(".txtConfirmPassword").val("");
+        Router.go("clearOrg");
+      }
+    });
+
+
+      
+              
+
+            }
+            }
+            );
+
+      
      
 
 

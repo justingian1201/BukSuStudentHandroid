@@ -27,16 +27,19 @@
     {{#each userData}}
 
 
+    {{#if _.isEqual profile.college 'CAS'}}
+
+
   <li class="item item-toggle">
   <a href="{{pathFor 'studClearance'}}" style="text-decoration:none">
      <h2><b>{{username}}</b> : {{profile.lastName}}, {{profile.firstName}} {{profile.middleName}}</h2>
       </a>
 
   
-    {{#if _.isEqual currentUser.username 'SSC'}}
+    {{#if _.isEqual currentUser.username 'BTC'}}
      <label class="toggle toggle-assertive">
      
-       <input type="checkbox" class="btnSCCStatus" {{profile.SSCstatus}}>
+       <input type="checkbox" class="btnBTCStatus" {{profile.BTCstatus}}>
 
        <div class="track">
          <div class="handle"></div>
@@ -45,10 +48,10 @@
      </label>
      {{/if}}
 
-     {{#if _.isEqual currentUser.username 'SBO'}}
+     {{#if _.isEqual currentUser.username 'ComSoc'}}
      <label class="toggle toggle-assertive">
      
-       <input type="checkbox" class="btnSBOStatus" {{profile.SBOstatus}}>
+       <input type="checkbox" class="btnComSocStatus" {{profile.ComSocstatus}}>
 
        <div class="track">
          <div class="handle"></div>
@@ -57,10 +60,98 @@
      </label>
      {{/if}}
 
-     {{#if _.isEqual currentUser.username 'COLLEGIANER'}}
+     {{#if _.isEqual currentUser.username 'EngLang'}}
      <label class="toggle toggle-assertive">
      
-       <input type="checkbox" class="btnCOLLEGIANERStatus" {{profile.COLLEGIANERstatus}}>
+       <input type="checkbox" class="btnEngLangStatus" {{profile.EngLangstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'NatSci'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnNatSciStatus" {{profile.NatScistatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'SSD'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnSSDStatus" {{profile.SSDstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOTREAS'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOTREASStatus" {{profile.CASSBOTREASstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOGOV'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOGOVStatus" {{profile.CASSBOGOVstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASGUIDANCE'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASGUIDANCEStatus" {{profile.CASGUIDANCEstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOADVISER'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOADVISERStatus" {{profile.CASSBOADVISERstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASCHAIRPERSON'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCHAIRPERSONStatus" {{profile.CHAIRPERSONstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASDEAN'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASDEANStatus" {{profile.CASDEANstatus}}>
 
        <div class="track">
          <div class="handle"></div>
@@ -71,6 +162,150 @@
 
 
   </li>
+
+  {{/if}}
+
+
+  {{#if _.isEqual profile.college 'COB'}}
+
+
+  <li class="item item-toggle">
+  <a href="{{pathFor 'studClearance'}}" style="text-decoration:none">
+     <h2><b>{{username}}</b> : {{profile.lastName}}, {{profile.firstName}} {{profile.middleName}}</h2>
+      </a>
+
+  
+    {{#if _.isEqual currentUser.username 'BTC'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnSJHstatus" {{profile.SJHstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+     {{#if _.isEqual currentUser.username 'ComSoc'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnComSocStatus" {{profile.ComSocstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+     {{#if _.isEqual currentUser.username 'EngLang'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnEngLangStatus" {{profile.EngLangstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'NatSci'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnNatSciStatus" {{profile.NatScistatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'SSD'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnSSDStatus" {{profile.SSDstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOTREAS'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOTREASStatus" {{profile.CASSBOTREASstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOGOV'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOGOVStatus" {{profile.CASSBOGOVstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASGUIDANCE'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASGUIDANCEStatus" {{profile.CASGUIDANCEstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASSBOADVISER'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASSBOADVISERStatus" {{profile.CASSBOADVISERstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CHAIRPERSON'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCHAIRPERSONStatus" {{profile.CHAIRPERSONstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+     {{#if _.isEqual currentUser.username 'CASDEAN'}}
+     <label class="toggle toggle-assertive">
+     
+       <input type="checkbox" class="btnCASDEANStatus" {{profile.CASDEANstatus}}>
+
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+
+     </label>
+     {{/if}}
+
+
+  </li>
+
+  {{/if}}
+
+
+
  
 
   {{/each}}

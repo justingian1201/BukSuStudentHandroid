@@ -55,6 +55,94 @@ Template.SSClist.events({
 
     },
 
+
+    // <<<===============CAS START=================>>>
+
+    "click .btnBTCStatus": function(event) {
+
+        Meteor.call("updateBTC", this);
+        return false;
+},
+
+    "click .btnComSocStatus": function(event) {
+
+        Meteor.call("updateComSoc", this);
+        return false;
+},
+
+    "click .btnEngLangStatus": function(event) {
+
+        Meteor.call("updateEngLang", this);
+        return false;
+},
+
+    "click .btnNatSciStatus": function(event) {
+
+        Meteor.call("updateNatSci", this);
+        return false;
+},
+
+    "click .btnSSDStatus": function(event) {
+
+        Meteor.call("updateSSD", this);
+        return false;
+},
+
+    "click .btnCASSBOTREASStatus": function(event) {
+
+        Meteor.call("updateCASSBOTREAS", this);
+        return false;
+},
+
+    "click .btnCASSBOGOVStatus": function(event) {
+
+        Meteor.call("updateCASSBOGOV", this);
+        return false;
+},
+
+    "click .btnCASGUIDANCEStatus": function(event) {
+
+        Meteor.call("updateCASGUIDANCE", this);
+        return false;
+},
+
+    "click .btnCASSBOADVISERStatus": function(event) {
+
+        Meteor.call("updateCASSBOADVISER", this);
+        return false;
+},
+
+    "click .btnCHAIRPERSONStatus": function(event) {
+
+        Meteor.call("updatebtnCHAIRPERSON", this);
+        return false;
+},
+
+    "click .btnCASDEANStatus": function(event) {
+
+        Meteor.call("updateCASDEAN", this);
+        return false;
+},
+
+// <<<===============CAS END=================>>>
+
+
+// <<<===============COB START=================>>>
+
+
+
+
+
+    "click .btnSJHstatus": function(event) {
+
+        Meteor.call("updateSJH", this);
+        return false;
+},
+
+
+
+
+
     "click .btnSCCStatus": function(event) {
 
         Meteor.call("updateSSC", this);
@@ -95,13 +183,13 @@ Template.layout.rendered = function () {
     // IonSideMenu.snapper.settings({disable: 'right'});
 };
 
-Template.index.rendered = function () {
+/*Template.index.rendered = function () {
 
     IonSideMenu.snapper.enable();
     IonSideMenu.snapper.settings({dragger: null});
     
-    // IonSideMenu.snapper.settings({disable: 'right'});
-};
+    IonSideMenu.snapper.settings({disable: 'right'});
+};*/
 
 
 
