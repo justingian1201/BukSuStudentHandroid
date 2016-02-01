@@ -28,21 +28,30 @@
  
 
 
-
+{{#if _.isEqual currentUser.roles.clearance.[0] 'user'}}
 
 
 <a href="{{pathFor 'studentProfileInfo'}}" class="item item-icon-left" data-ion-menu-close>
-    <i class="icon ion-log-out"></i>
+    <!-- <i class="icon ion-android-contact"></i> -->
+    <i class="icon ion-android-person"></i>
     Profile
   </a>
 
   <a href="{{pathFor 'tabs.one'}}" class="item item-icon-left" data-ion-menu-close>
-    <i class="icon ion-log-out"></i>
+    <!-- <i class="icon ion-android-checkmark-circle"></i> -->
+    <!-- <i class="icon ion-android-list"></i> -->
+    <i class="icon ion-ios-paper-outline"></i>
     Clearance
   </a>
 
+  {{/if}}
+
+
+
+
  <a href="#" id="btnLogout" class="item item-icon-left" data-ion-menu-close>
     <i class="icon ion-log-out"></i>
+    <!-- <i class="icon ion-android-exit"></i> -->
     Logout
   </a>
               

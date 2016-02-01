@@ -60,6 +60,8 @@ Template.SSClist.events({
 
     "click .btnBTCStatus": function(event) {
 
+        // console.log("this", this);
+
         Meteor.call("updateBTC", this);
         return false;
 },
@@ -133,11 +135,162 @@ Template.SSClist.events({
 
 
 
-    "click .btnSJHstatus": function(event) {
+    "click .btnSJHStatus": function(event) {
 
         Meteor.call("updateSJH", this);
         return false;
 },
+
+"click .btnJPCCIStatus": function(event) {
+
+        Meteor.call("updateJPCCI", this);
+        return false;
+},
+"click .btnJPIAStatus": function(event) {
+
+        Meteor.call("updateJPIA", this);
+        return false;
+},
+"click .btnPASStatus": function(event) {
+
+        Meteor.call("updatePAS", this);
+        return false;
+},
+
+"click .btnJFMCStatus": function(event) {
+
+        Meteor.call("updateJFMC", this);
+        return false;
+},
+
+"click .btnCOBGUIDANCEStatus": function(event) {
+
+        Meteor.call("updateCOBGUIDANCE", this);
+        return false;
+},
+
+"click .btnCOBSBOADVISERStatus": function(event) {
+
+        Meteor.call("updateCOBSBOADVISER", this);
+        return false;
+},
+
+
+"click .btnCOBSBOStatus": function(event) {
+
+        Meteor.call("updateCOBSBO", this);
+        return false;
+},
+
+
+// <<<===============COB END=================>>>
+
+
+// <<<===============CCDT START=================>>>
+
+"click .btnSocPresStatus": function(event) {
+
+        Meteor.call("updateSocPres", this);
+        return false;
+},
+"click .btnCCEITSBOTREASStatus": function(event) {
+
+        Meteor.call("updateCCEITSBOTREAS", this);
+        return false;
+},
+"click .btnCCEITSBOGOVStatus": function(event) {
+
+        Meteor.call("updateCCEITSBOGOV", this);
+        return false;
+},
+"click .btnCCEITCHAIRPERSONStatus": function(event) {
+
+        Meteor.call("updateCCEITCHAIRPERSON", this);
+        return false;
+},
+"click .btnCCEITDEANStatus": function(event) {
+
+        Meteor.call("updateCCEITDEAN", this);
+        return false;
+},
+"click .btnPECIRCLEStatus": function(event) {
+
+        Meteor.call("updatePECIRCLE", this);
+        return false;
+},
+"click .btnMENTORSTREASStatus": function(event) {
+
+        Meteor.call("updateMENTORSTREAS", this);
+        return false;
+},
+"click .btnCTESBOStatus": function(event) {
+
+        Meteor.call("updateCTESBO", this);
+        return false;
+},
+"click .btnMENTORSADVISERStatus": function(event) {
+
+        Meteor.call("updateMENTORSADVISER", this);
+        return false;
+},
+"click .btnCTESBOADVISERStatus": function(event) {
+
+        Meteor.call("updateCTESBOADVISER", this);
+        return false;
+},
+"click .btnSSTStatus": function(event) {
+
+        Meteor.call("updateSST", this);
+        return false;
+},
+"click .btnSSLPRINCIPALStatus": function(event) {
+
+        Meteor.call("updateSSLPRINCIPAL", this);
+        return false;
+},
+"click .btnESLPRINCIPALStatus": function(event) {
+
+        Meteor.call("updateESLPRINCIPAL", this);
+        return false;
+},
+"click .btnCTECHAIRPERSONStatus": function(event) {
+
+        Meteor.call("updateCTECHAIRPERSON", this);
+        return false;
+},
+"click .btnCTEDEANStatus": function(event) {
+
+        Meteor.call("updateCTEDEAN", this);
+        return false;
+},
+"click .btnCONSBOTREASStatus": function(event) {
+
+        Meteor.call("updateCONSBOTREAS", this);
+        return false;
+},
+"click .btnCONSBOGOVStatus": function(event) {
+
+        Meteor.call("updateCONSBOGOV", this);
+        return false;
+},
+"click .btnCONSBOADVISERStatus": function(event) {
+
+        Meteor.call("updateCONSBOADVISER", this);
+        return false;
+},
+"click .btnYLCORDINATORStatus": function(event) {
+
+        Meteor.call("updateYLCORDINATOR", this);
+        return false;
+},
+
+"click .btnCONDEANStatus": function(event) {
+
+        Meteor.call("updateCONDEAN", this);
+        return false;
+},
+
+
 
 
 

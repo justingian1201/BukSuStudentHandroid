@@ -28,25 +28,29 @@
 
     <div class="list">
 
-      <a href="{{pathFor 'buildings'}}" class="item item-avatar item-icon-right">
+      <a href="{{pathFor 'buildings'}}" class="item item-avatar item-icon-right" data-ion-menu-close>
       <img src="img/home/search.png">
       <h2>Buildings</h2>
       <i class="icon ion-ios-arrow-forward"></i>
       </a>
+
+      {{#if _.isEqual currentUser.roles.clearance.[0] 'Admin'}}
       
-      <a href="{{pathFor 'profile'}}" class="item item-avatar item-icon-right">
+      <a href="{{pathFor 'profile'}}" class="item item-avatar item-icon-right" data-ion-menu-close>
       <img src="img/home/search.png">
       <h2>Clearance</h2>
       <i class="icon ion-ios-arrow-forward"></i>
       </a>
 
-      <a href="{{pathFor 'handbook'}}" class="item item-avatar item-icon-right">
+      {{/if}}
+
+      <a href="{{pathFor 'handbook'}}" class="item item-avatar item-icon-right" data-ion-menu-close>
       <img src="img/home/codeEthics.png">
       <h2>Handbook</h2>
       <i class="icon ion-ios-arrow-forward"></i>
       </a>
       
-      <a href="{{pathFor 'map'}}" class="item item-avatar item-icon-right">
+      <a href="{{pathFor 'map'}}" class="item item-avatar item-icon-right" data-ion-menu-close>
       <img src="img/home/map.png">
       <h2>Map</h2>
       <i class="icon ion-ios-arrow-forward"></i>

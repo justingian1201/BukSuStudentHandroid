@@ -54,9 +54,17 @@ Template.register.events({
 
     var pass1 = $(".txtPassword").val();
     var pass2 = $(".txtConfirmPassword").val();
+    var usernameValid = $(".txtNumber").val();
+    var lastNameValid = $(".txtNumber").val();
+    var firstNameValid = $(".txtNumber").val();
+    var courseValid = $(".txtNumber").val();
+    var yearValid = $(".txtNumber").val();
     /*var college = $(".txtCollege").val();
 
     console.log(college);*/
+    if(usernameValid && pass1 && lastNameValid && firstNameValid && courseValid && yearValid){
+
+    
 
     if(pass1 === pass2){
       Meteor.call("secureCreateUser", { 
@@ -122,6 +130,16 @@ Template.register.events({
       okText: 'Ok'
     });
     }
+
+  }else{
+
+    IonPopup.alert({
+      title: 'Alert!',
+      template: 'Please! Complete Input the Fields',
+      okText: 'Ok'
+    });
+
+  }
 
 
       
